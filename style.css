@@ -111,6 +111,7 @@ body {
 	background-color: #EAFCDF;
 	margin: 0;
 	transition: 1s;
+	min-width: 380px;
 }
 header {
 	height: 100px;
@@ -304,6 +305,16 @@ form button:hover {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	display: inline-block;
+}
+
+.item1 {
+	background-image: url(images/товар1.png);
+}
+.item3 {
+	background-image: url(images/товар2.png) ;
+}
+.item2 {
+	background-image: url(images/товар3.htm);
 }
 
 .slider .item img {
