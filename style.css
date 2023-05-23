@@ -316,34 +316,15 @@ form button:hover {
 	display: inline-block;
 }
 
-.item1 {
-	background-image: url(images/товар1.png);
-}
-.item2 {
-	background-image: url(images/товар2.png) ;
-}
-.item3 {
-	background-image: url(images/товар3.jpg);
-}
 
-.item {
+.item img {
 	position: absolute;
-	overflow: hidden;
-	/* object-fit: cover; */
-	width: 100%;
-	height: 100%;
-	/* margin: 0 auto; */
-	border-radius: 30px;
-	border: 1px solid #ADADAD;
-}
-
-.item1, .item2, .item3 {
-	position: absolute;
-	object-fit: cover !important;
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	/* border-radius: 30px; */
+	border: 1px solid #ADADAD;
+	border-radius: 30px;
 }
 
 /* Кнопки назад и вперёд: */
