@@ -332,7 +332,7 @@ form button:hover {
 	background-image: url(/images/товар3.jpg);
 }
 
-.slider .item img {
+.item1, .item2, .item3 {
 	position: absolute;
 	object-fit: cover;
 	width: 90%;
