@@ -326,9 +326,6 @@ form button:hover {
 	background-image: url(images/товар3.jpg);
 }
 
-.item {
-	position: relative;
-}
 
 .item1, .item2, .item3 {
 	position: absolute;
