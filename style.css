@@ -16,6 +16,10 @@
 	gap: 30px;
 }
 
+.cat-cont {
+	margin-left: 150px;
+}
+
 @media (max-width: 700px) {
 	.section-1 {
 		flex-wrap: wrap; 
@@ -39,6 +43,9 @@
 }
 
 @media (max-width: 1100px) {
+	.cat-cont {
+		margin-left: 50px;
+	}
 	header .text {
 		display: none;
 	}
@@ -211,7 +218,6 @@ header .wrapper {
 	width: 300px;
 	height: 300px;
 	/* overflow: hidden; */
-	margin-left: 150px;
 	margin-bottom: 40px;
 }
 
