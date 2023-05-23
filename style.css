@@ -274,6 +274,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	min-width: 400px;
 }
 .form-cont {
 	width: 60%;
