@@ -326,15 +326,23 @@ form button:hover {
 	background-image: url(images/товар3.jpg);
 }
 
+.item {
+	position: absolute;
+	/* object-fit: cover; */
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	border-radius: 30px;
+	border: 1px solid #ADADAD;
+}
 
-.item > * {
+.item1, .item2, .item3 {
 	position: absolute;
 	object-fit: cover;
 	width: 90%;
 	height: 500px;
 	margin: 0 auto;
-	border-radius: 30px;
-	border: 1px solid #ADADAD;
+	/* border-radius: 30px; */
 }
 
 /* Кнопки назад и вперёд: */
