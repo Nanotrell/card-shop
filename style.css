@@ -327,7 +327,7 @@ form button:hover {
 }
 
 
-.item {
+.item > * {
 	position: absolute;
 	object-fit: cover;
 	width: 90%;
