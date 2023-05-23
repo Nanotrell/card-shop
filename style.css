@@ -317,12 +317,18 @@ form button:hover {
 }
 
 .item1 {
+	width: 100%;
+	height: 100%;
 	background-image: url(images/товар1.png);
 }
-.item3 {
+.item2 {
+	width: 100%;
+	height: 100%;
 	background-image: url(images/товар2.png) ;
 }
-.item2 {
+.item3 {
+	width: 100%;
+	height: 100%;
 	background-image: url(images/товар3.htm);
 }
 
