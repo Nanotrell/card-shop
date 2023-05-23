@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta name="robots" content="noindex nofollow"> -->
+		<title>Магазин открыток - Главная страница</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<div class="logo-img"></div>
+					<div class="menu">
+						<div class="menu-items">
+							<div class="menu-item" style="	margin-bottom: 10px; "></div>
+							<div class="menu-item" style="	margin-bottom: 10px; "></div>
+							<div class="menu-item"></div>
+						</div>
+						<div class="view-menu">	
+							<ul>
+								<li><a class="menu-text" href="index.html">Главная</a></li>
+								<li><a class="menu-text" href="1.html">Избранное</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="text-logo">Открытки</div>
+				</div>
+				<a class="text" href="index.html">Главная</a>
+				<a class="text" href="1.html">Избранное</a>
+				<div class="wrap-theme">
+					<div class="text">Тема сайта</div>
+					<div class="theme">
+						<div class="ball-theme"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="section-1 wrapper">
+			<p class="text" style="font-size: 22px; width: 65%; min-width: 300px;">
+				Доброго времени суток! На этом сайте вы можете заказать классную открытку. С
+				нашей продукцией, у вас появится возможность креативно поздравить своих
+				родственников, друзей или коллег по работе!
+			</p>
+			<video class="video-1" loop="loop" autoplay="" muted="">
+				<source
+					src="https://static.videezy.com/system/resources/previews/000/002/165/original/Black-cat-in-green-grass.mp4"
+					type="video/mp4"
+				/>
+			</video>
+		</section>
+		<section class="section-2">
+			<div class="wrapper">
+				<h2 class="text">Наш ассортимент в наличии:</h2>
+				<!-- слайдер -->
+				<!-- Основной блок слайдера -->
+				<div class="slider">
+
+					<!-- Первый слайд -->
+					<div class="item">
+							<img src="https://a302.ru/upload/iblock/6e6/no_image_800x800.png">
+					</div>
+					<!-- Второй слайд -->
+					<div class="item">
+							<img src="http://gkb-3.ru/otdel/87ce33e737ac0fa78e829ae6e0db4a5b.jpg">
+					</div>
+					<!-- Третий слайд -->
+					<div class="item">
+							<img src="https://afkmarket.ru/upload/iblock/531/53138742f7d3ea4c8f7064e297eae6e2.png">
+					</div>
+					<!-- Кнопки-стрелочки -->
+					<a class="previous" onclick="previousSlide()">&#10094;</a>
+					<a class="next" onclick="nextSlide()">&#10095;</a>
+				</div>
+				<div class="cat-cont">
+					<div class="cat-animation-1"></div>
+					<div class="cat-animation-2"></div>
+					<div class="cat-animation-3"></div>
+					<div class="cat-animation-4"></div>
+				</div>
+			</div>
+		</section>
+		<section class="section-3 wrapper text">
+			<form action="">
+				<h2 class="text" style="margin-bottom: 30px; margin-top: 40px;">Регистрация / Вход</h2>
+				<div class="form-cont">
+					<label for="userLastName" id="userLastNameLabel">Введите Вашу фамилию:</label>
+					<br>
+					<input type="text" id="userLastName" placeholder="Фамилия"/>
+					<br>
+					<label for="userName" id="userNameLabel">Введите Ваше имя:</label>
+					<br>
+					<input type="text" id="userName" placeholder="Имя"/>
+					<br>
+					<label for="phoneNumber" id="phoneNumberLabel">Введите Ваш номер телефона:</label>
+					<br>
+					<input type="tel" id="phoneNumber" placeholder="+8-XXX-XXX-XX-XX"/>
+					<br>
+				</div>
+				<button type="submit" id="submit">Авторизироваться</button>
+			</form>
+		</section>
+		<footer>
+			<div class="wrapper" style="	gap: 20px; display: flex;">
+				<a href="#"><img src="images/вк-с.png" alt="Вконтакте" width="50" height="50"></a>
+				<a href="#"><img src="images/инста-с.png" alt="Инстаграмм" width="50" height="50"></a>
+				<a href="#"><img src="images/тг-с.png" alt="Телеграмм" width="50" height="50"></a>
+			</div>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>
