@@ -121,7 +121,7 @@ body {
 	background-color: #EAFCDF;
 	margin: 0;
 	transition: 1s;
-	min-width: 380px;
+	min-width: 500px;
 }
 header {
 	height: 100px;
@@ -130,6 +130,7 @@ header {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .wrapper {
+	min-width: 450px;
 	margin: 0 auto;
 	width: 80%;
 }
@@ -195,7 +196,7 @@ header .wrapper {
 .video-1 {
 	border-radius: 90px;
 	width: 33%;
-	min-width: 300px;
+	min-width: 400px;
 	height: 260px;
 }
 .section-1 {
@@ -307,6 +308,7 @@ form button:hover {
 
 /* Слайдер: */
 .slider{
+	min-width: 400px;
 	width: 50%;
 	min-width: 400px;
 	position: relative;
