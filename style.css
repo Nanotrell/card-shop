@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 700px) {
+	.cat-cont {
+		margin-left: 10%;
+	}
 	.section-1 {
 		flex-wrap: wrap; 
 	}
