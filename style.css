@@ -279,6 +279,11 @@ form {
 .form-cont {
 	width: 60%;
 }
+
+.input-color {
+	color: #9c9c9c;
+}
+
 input {
 	border: none;
  border-bottom: 1px solid #ADADAD;
@@ -319,6 +324,69 @@ form button:hover {
 	display: inline-block;
 }
 
+.price {
+	position: absolute;
+	top: 81%;
+	height: 100px;
+	width: 100%;
+	background-color: #000;
+	opacity: 0;
+	border-radius: 0 0 30px 30px;
+	transition: .5s;
+}
+
+.item:hover .price {
+	opacity: 0.2;
+}
+
+.item:hover .favourite-grey, .favourite-red {
+	filter: brightness(80%);
+}
+
+.price p {
+	margin-left: 20px;
+	display: inline-block;
+	font-size: 20px;
+	color: azure;
+	font-weight: 700;
+}
+
+.favourite-grey:hover, .favourite-red:hover {
+	top: 83%;
+}
+
+.favourite-red {
+	cursor: pointer;
+	position: absolute;
+	top: 85%;
+	left: 85%;
+	background-image: url(images/favourite-red.png);
+	transition: .5s;
+}
+
+.favourite-grey {
+	cursor: pointer;
+	position: absolute;
+	top: 85%;
+	left: 85%;
+	background-image: url(images/favourite-grey.png);
+	transition: .5s;
+}
+
+.favourites {
+	flex-wrap: wrap;
+	border-radius: 90px;
+	border: #ADADAD 1px solid;
+	margin-top: 60px;
+	padding: 40px 0 40px 20px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.message-favourite {
+	display: block;
+}
 
 .item img {
 	position: absolute;
@@ -376,12 +444,6 @@ form button:hover {
 	}
 }
 
-/* .cat-cont .cat-animation-1 {
-	animation-iteration-count: infinite;
-	animation-name: slidein;
-	animation-duration: 1.5s;
-} */
-
 
 footer {
 	display: flex;
@@ -389,5 +451,6 @@ footer {
 	height: 90px;
 	margin-top: 100px;
 	border-top: solid #ADADAD 1px;
+	border-bottom: solid #ADADAD 1px;
 	width: 100%;
 }

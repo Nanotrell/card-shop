@@ -22,14 +22,14 @@
 						<div class="view-menu">	
 							<ul>
 								<li><a class="menu-text" href="index.html">Главная</a></li>
-								<li><a class="menu-text" href="1.html">Избранное</a></li>
+								<li><a class="menu-text" href="#favouritesid">Избранное</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="text-logo">Открытки</div>
 				</div>
 				<a class="text" href="index.html">Главная</a>
-				<a class="text" href="1.html">Избранное</a>
+				<a class="text" href="#favouritesid">Избранное</a>
 				<div class="wrap-theme">
 					<div class="text" style="width: 157px">Тема сайта</div>
 					<div class="theme">
@@ -60,15 +60,21 @@
 
 					<!-- Первый слайд -->
 					<div class="item">
-						<img src="images/товар1.png">
+						<img id="good1" src="images/товар1.png">
+						<div class="price"><p class="text">150 рублей</p></div>
+						<div onclick="elemLike1Do()" id="elemLike-1" class="favourite-grey" style="width: 60px; height: 50px;"></div>
 					</div>
 					<!-- Второй слайд -->
 					<div class="item">
-						<img src="images/товар2.png">
+						<img id="good2" src="images/товар2.png">
+						<div class="price"><p class="text">150 рублей</p></div>
+						<div onclick="elemLike2Do()" id="elemLike-2" class="favourite-grey" style="width: 60px; height: 50px;"></div>
 					</div>
 					<!-- Третий слайд -->
 					<div class="item">
-						<img src="images/товар3.jpg">
+						<img id="good3" src="images/товар3.jpg">
+						<div class="price"><p class="text">150 рублей</p></div>
+						<div onclick="elemLike3Do()" id="elemLike-3" class="favourite-grey" style="width: 60px; height: 50px;"></div>
 					</div>
 					<!-- Кнопки-стрелочки -->
 					<a class="previous" onclick="previousSlide()">&#10094;</a>
@@ -82,21 +88,25 @@
 				</div>
 			</div>
 		</section>
+		<section id="favouritesid" class="favourites wrapper">
+			<h2 class="text" style="font-size: 28px; width: 100%; margin-left: 10%;">Избранное</h2>
+			<p class="text message-favourite" style="font-size: 24px; margin-left: 5%;">Товары ещё не добавлены</p>
+		</section>
 		<section class="section-3 wrapper text">
 			<form action="">
 				<h2 class="text" style="margin-bottom: 30px; margin-top: 40px;">Регистрация / Вход</h2>
 				<div class="form-cont">
 					<label for="userLastName" id="userLastNameLabel">Введите Вашу фамилию:</label>
 					<br>
-					<input type="text" id="userLastName" placeholder="Фамилия"/>
+					<input class="input-color" type="text" id="userLastName" placeholder="Фамилия"/>
 					<br>
 					<label for="userName" id="userNameLabel">Введите Ваше имя:</label>
 					<br>
-					<input type="text" id="userName" placeholder="Имя"/>
+					<input class="input-color" type="text" id="userName" placeholder="Имя"/>
 					<br>
 					<label for="phoneNumber" id="phoneNumberLabel">Введите Ваш номер телефона:</label>
 					<br>
-					<input type="tel" id="phoneNumber" placeholder="+8-XXX-XXX-XX-XX"/>
+					<input class="input-color" type="tel" id="phoneNumber" placeholder="+8-XXX-XXX-XX-XX"/>
 					<br>
 				</div>
 				<button type="submit" id="submit">Авторизироваться</button>

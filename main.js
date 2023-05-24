@@ -162,3 +162,83 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 
+let elemLike1 = document.getElementById('elemLike-1');
+let elemLike2 = document.getElementById('elemLike-2');
+let elemLike3 = document.getElementById('elemLike-3');
+
+let Favourites = document.getElementsByClassName("favourites")[0];
+let messageFavourite = document.getElementsByClassName("message-favourite")[0];
+
+let imgGood1 = document.getElementById("good1").cloneNode();
+let imgGood2 = document.getElementById("good2").cloneNode();
+let imgGood3 = document.getElementById("good3").cloneNode();
+
+imgGood1.style.objectFit = "cover";
+imgGood1.style.width = "300px";
+imgGood1.style.height = "300px";
+imgGood1.style.borderRadius = "30px";
+
+imgGood2.style.objectFit = "cover";
+imgGood2.style.width = "300px";
+imgGood2.style.height = "300px";
+imgGood2.style.borderRadius = "30px";
+
+imgGood3.style.objectFit = "cover";
+imgGood3.style.width = "300px";
+imgGood3.style.height = "300px";
+imgGood3.style.borderRadius = "30px";
+
+let LikeColor1 = "grey";
+let LikeColor2 = "grey";
+let LikeColor3 = "grey";
+
+function elemLike1Do() {
+	
+	if (LikeColor1 == "grey") {
+		elemLike1.className = "favourite-red";
+		LikeColor1 = "red";
+		Favourites.appendChild(imgGood1);
+		messageFavourite.style.display = "none";
+	}
+	else if (LikeColor1 == "red") {
+		elemLike1.className = "favourite-grey";
+		LikeColor1 = "grey";
+		imgGood1.remove();
+	}
+	if (LikeColor1 == "grey" && LikeColor2 == "grey" && LikeColor3 == "grey"){
+		messageFavourite.style.display = "block";
+	}
+}
+function elemLike2Do() {
+	if (LikeColor2 == "grey") {
+		elemLike2.className = "favourite-red";
+		LikeColor2 = "red";
+		Favourites.appendChild(imgGood2);
+		messageFavourite.style.display = "none";
+	}
+	else if (LikeColor2 == "red") {
+		elemLike2.className = "favourite-grey";
+		LikeColor2 = "grey";
+		imgGood2.remove();
+	}
+	if (LikeColor1 == "grey" && LikeColor2 == "grey" && LikeColor3 == "grey"){
+		messageFavourite.style.display = "block";
+	}
+}
+function elemLike3Do() {
+	if (LikeColor3 == "grey") {
+		elemLike3.className = "favourite-red";
+		LikeColor3 = "red";
+		Favourites.appendChild(imgGood3);
+		messageFavourite.style.display = "none";
+	}
+	else if (LikeColor3 == "red") {
+		elemLike3.className = "favourite-grey";
+		LikeColor3 = "grey";
+		imgGood3.remove();
+	}
+	if (LikeColor1 == "grey" && LikeColor2 == "grey" && LikeColor3 == "grey"){
+		messageFavourite.style.display = "block";
+	}
+}
+
