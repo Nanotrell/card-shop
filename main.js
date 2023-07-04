@@ -134,7 +134,9 @@ showSlides(slideIndex);
 function nextSlide() {
     showSlides(slideIndex += 1);
 }
-
+setInterval(function() {
+	nextSlide()
+}, 5000);
 function previousSlide() {
     showSlides(slideIndex -= 1);
 }
@@ -199,7 +201,6 @@ function elemLike1Do() {
 		LikeColor1 = "red";
 		Favourites.appendChild(imgGood1);
 		messageFavourite.style.display = "none";
-		alert('Товар №1 добавлен в "Избранное"!')
 	}
 	else if (LikeColor1 == "red") {
 		elemLike1.className = "favourite-grey";
@@ -216,7 +217,6 @@ function elemLike2Do() {
 		LikeColor2 = "red";
 		Favourites.appendChild(imgGood2);
 		messageFavourite.style.display = "none";
-		alert('Товар №2 добавлен в "Избранное"!')
 	}
 	else if (LikeColor2 == "red") {
 		elemLike2.className = "favourite-grey";
@@ -233,7 +233,6 @@ function elemLike3Do() {
 		LikeColor3 = "red";
 		Favourites.appendChild(imgGood3);
 		messageFavourite.style.display = "none";
-		alert('Товар №3 добавлен в "Избранное"!')
 	}
 	else if (LikeColor3 == "red") {
 		elemLike3.className = "favourite-grey";

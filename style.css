@@ -334,8 +334,11 @@ form button:hover {
 }
 
 .item:hover .price {
-	opacity: 0.2;
+	opacity: 0.3;
 }
+/* .item:hover .price p {
+	opacity: 1;
+} */
 
 .item:hover .favourite-grey, .favourite-red {
 	filter: brightness(80%);
@@ -343,9 +346,9 @@ form button:hover {
 
 .price p {
 	margin-left: 20px;
+	color: #c7ffbc;
 	display: inline-block;
 	font-size: 20px;
-	color: azure;
 	font-weight: 700;
 }
 
